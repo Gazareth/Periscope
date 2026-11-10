@@ -1,0 +1,8 @@
+[build]
+  command = "pnpm build"
+
+[build.environment]
+  # These are plain config (bucket and folder names), not credentials. Their values
+  # also appear in the built pages (e.g. "develop"), so the secrets scanner would
+  # always fail on them. R2_ACCESS_KEY_ID / R2_SECRET_ACCESS_KEY are still scanned.
+  SECRETS_SCAN_OMIT_KEYS = "R2_BUCKET,PERISCOPE_ORG,PERISCOPE_REPO,PERISCOPE_MAIN_BRANCH"

@@ -31,6 +31,9 @@ Release folders like `1_0_0` are shown as `v1.0.0`. Any image (`png`, `jpg`, `we
 | `PERISCOPE_ORG` / `PERISCOPE_REPO` | Organisation and repo folders, e.g. `gazareth` / `european-shibu` |
 | `PERISCOPE_MAIN_BRANCH` | Branch folder to prerender (default `develop`) |
 | `PERISCOPE_STATIC_RELEASES` | How many of the newest releases to prerender (default `2`) |
+| `PERISCOPE_PASSWORD` | Optional. Password for the whole site, entered on a login page (stays logged in for 30 days). Changing it logs everyone out. Unset = no password |
+
+The site is also marked `noindex`, so search engines won't list it.
 
 ## Caching
 
